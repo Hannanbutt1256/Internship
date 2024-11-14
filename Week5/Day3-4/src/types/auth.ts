@@ -1,9 +1,10 @@
-export interface Register {
+export interface RegisterInterface {
   userName: string;
   email: string;
   password: string;
+  confirmPassword: string;
 }
-export interface Login {
+export interface LoginInterface {
   email: string;
   password: string;
 }

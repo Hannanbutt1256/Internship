@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav className="py-7 px-7 mt-5 mx-5 font-geist-sans bg-black text-charcoal flex justify-between items-center  rounded-2xl">
-      <Link className="flex items-center gap-4" to="Home">
+      <Link className="flex items-center gap-4" to="/">
         <h2 className="text-xl font-bold text-lightBeige">CMS</h2>
       </Link>
 
