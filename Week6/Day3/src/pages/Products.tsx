@@ -51,7 +51,17 @@ const Products = () => {
               className="h-[200px] w-[200px] object-contain"
             />
             <div>
-              <h1 className="text-lg font-bold">{product.title}</h1>
+              <h1
+                className="text-lg font-bold truncate overflow-hidden"
+                style={{
+                  display: "-webkit-box",
+                  WebkitLineClamp: 1,
+                  WebkitBoxOrient: "vertical",
+                  whiteSpace: "normal",
+                }}
+              >
+                {product.title}
+              </h1>
               <p className="text-lg text-gray-700">${product.price}</p>
               <p
                 className="text-sm text-gray-500 truncate overflow-hidden"
