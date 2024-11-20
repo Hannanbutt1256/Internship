@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+# Day 3 Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a React-based application built using Vite and TypeScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+* Uses React Router for client-side routing
+* Utilizes Redux Toolkit for state management(for counter on specific products)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* Includes React Icons for icon components
+* Supports Tailwind CSS for styling
+* Used Dummy.Json api for fetching data in Products page.
 
-- Configure the top-level `parserOptions` property like this:
+## Issues faced
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+* Faced issue while it changes the state on all products(Resolved).
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Issues Resolved from Previous Task
+* Resolved the Navbar Responsiveness issue from Day1-2
+* Changed the product title size for the even layout of Product Card.
+* Made the Products Page Responsive.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Scripts
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+* `dev`: Starts the development server using Vite
+* `build`: Builds the application using TypeScript and Vite
+* `lint`: Runs ESLint to check for code errors and warnings
+* `preview`: Starts the preview server using Vite
+
+## Dependencies
+
+* `@reduxjs/toolkit`: ^2.3.0
+* `axios`: ^1.7.7
+* `react`: ^18.3.1
+* `react-dom`: ^18.3.1
+* `react-icons`: ^5.3.0
+* `react-redux`: ^9.1.2
+* `react-router-dom`: ^6.28.0
+
+## Dev Dependencies
+
+* `@eslint/js`: ^9.13.0
+* `@types/react`: ^18.3.12
+* `@types/react-dom`: ^18.3.1
+* `@vitejs/plugin-react`: ^4.3.3
+* `autoprefixer`: ^10.4.20
+* `eslint`: ^9.13.0
+* `eslint-plugin-react-hooks`: ^5.0.0
+* `eslint-plugin-react-refresh`: ^0.4.14
+* `globals`: ^15.11.0
+* `postcss`: ^8.4.49
+* `tailwindcss`: ^3.4.15
+* `typescript`: ~5.6.2
+* `typescript-eslint`: ^8.11.0
+* `vite`: ^5.4.10
+
+## Getting Started
+
+To get started with this project, clone the repository and run `npm install` to install the dependencies. Then, run `npm run dev` to start the development server.
