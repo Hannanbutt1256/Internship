@@ -1,4 +1,4 @@
-# Day 3 Project
+# Day 4-5 Project
 
 ## Overview
 
@@ -8,19 +8,29 @@ This project is a React-based application built using Vite and TypeScript.
 
 * Uses React Router for client-side routing
 * Utilizes Redux Toolkit for state management(for counter on specific products)
-
 * Includes React Icons for icon components
 * Supports Tailwind CSS for styling
 * Used Dummy.Json api for fetching data in Products page.
 
+## Features different from previous task
+
+* Added css to display the functionality of icon on hover in navbar.
+* Added a Cart page 
+* Added Cart functionality using Redux
 ## Issues faced
 
-* Faced issue while it changes the state on all products(Resolved).
+* Faces challenge while fetching data using thunk function from redux. 
+* Still some challenges in understanding how Redux works.
 
 ## Issues Resolved from Previous Task
-* Resolved the Navbar Responsiveness issue from Day1-2
-* Changed the product title size for the even layout of Product Card.
-* Made the Products Page Responsive.
+* Resolved Cart Layout issue from Day4
+
+## Current Issues
+
+* Issue with add to cart button on coming back to the page
+* Count of products does not change back to zero on returning from cart or any other page.
+* It can add on the basis of the count that does not change 
+* Some layout problems in cart page.
 
 ## Scripts
 
