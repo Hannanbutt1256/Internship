@@ -15,7 +15,7 @@ const StoreLocator: React.FC = () => {
   useEffect(() => {
     if (mapRef.current && !map) {
       const initMap = new google.maps.Map(mapRef.current, {
-        center: { lat: 37.7749, lng: -122.4194 }, // Default to San Francisco
+        center: { lat: 32.18186918708702, lng: 74.18624208324253 },
         zoom: 12,
       });
       setMap(initMap);
