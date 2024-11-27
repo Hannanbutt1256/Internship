@@ -90,7 +90,10 @@ const StoreLocator: React.FC = () => {
           Search
         </button>
       </div>
-      <div ref={mapRef} className="w-full h-96 mt-4 border rounded-md" />
+      <div
+        ref={mapRef}
+        className="w-full md:w-[600px]  h-96 mt-4 border rounded-md"
+      />
       <ul className="w-full max-w-md mt-4 space-y-2">
         {stores.map((store, index) => (
           <li
